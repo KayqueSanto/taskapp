@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+    <title>TaskApp login</title>
+</head>
+<body>
+    <main id="formlogin">
+        <h2>
+            Realizar login 
+        </h2>
+        <div>
+            <label>E-mail</label>
+            <input type="email" id="email"> 
+            
+        </div>
+        <div>
+            <label>Senha</label>
+            <input type="password" id="senha">
+        </div>
+        <button id="botaologin">Realizar login</button>
+        <span id="trocapagina" onclick="trocapagina()">Não tem uma conta? Inscreva-se</span>
+    </main>
+    <main id="formcadastro">
+        <h2>
+            Realizar cadastro 
+        </h2>
+        <div>
+            <label>Nome de usuário</label>
+            <input type="text" id="inputnome"> 
+            
+        </div>
+        <div>
+            <label>E-mail</label>
+            <input type="email" id="inputemail"> 
+            
+        </div>
+        <div>
+            <label>Senha</label>
+            <input type="password" id="inputsenha" class="inputsenha">
+        </div>
+        <div>
+            <label>Confirmar senha</label>
+            <input type="password" id="confirmarsenha" class="inputsenha">
+        </div>
+        <div id="divcheckbox">
+            <input type="checkbox" onclick="mostrarsenha()" id="mostrarsenha"> 
+            <label>Exibir senha</label>
+        </div>
+        <button id="botaocadastro">Realizar cadastro</button>
+        <span id="trocapagina" onclick="trocapagina()">Não tem uma conta? Inscreva-se</span>
+    </main>
+    <script src="js/acesso.js"></script>
+    <script src="js/mostrarsenha.js"></script>
+    <script src="@firebase/module.js" type="module"></script>
+</body>
+</html>
